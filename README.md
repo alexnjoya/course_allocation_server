@@ -137,21 +137,21 @@ Tokens expire after 24 hours; re-authenticate to obtain a new one.
 Seed data is injected at startup so you can explore immediately.
 
 **Students** (`studentId` → PIN):
-- `STU001` Kwame Asante — Computer Science, Year 2 — PIN `1234`
-- `STU002` Ama Mensah — Computer Science, Year 3 — PIN `5678`
-- `STU003` Kofi Osei — Mathematics, Year 1 — PIN `9012`
-- `STU004` Akosua Boateng — Computer Science, Year 2 — PIN `3456`
+- `10953537` Kwame Asante — Computer Science, Year 2 — PIN `12534`
+- `10953535` Ama Mensah — Computer Science, Year 3 — PIN `56478`
+- `10953539` Kofi Osei — Mathematics, Year 1 — PIN `94012`
+- `10953538` Akosua Boateng — Computer Science, Year 2 — PIN `34456`
 
 **Courses**
-- `CS201` Data Structures and Algorithms — Level 2, 3 credits
-- `CS301` Database Systems — Level 3, 3 credits
-- `CS202` Object-Oriented Programming — Level 2, 4 credits
-- `MATH101` Calculus I — Level 1, 4 credits
-- `CS401` Software Engineering — Level 4, 3 credits
-- `CS302` Operating Systems — Level 3, 3 credits
+- `DCIT201` Data Structures and Algorithms — Level 200, 3 credits
+- `DCIT301` Database Systems — Level 300, 3 credits
+- `DCIT202` Object-Oriented Programming — Level 200, 3 credits
+- `MATH101` Calculus I — Level 100, 3 credits
+- `DCIT401` Software Engineering — Level 400, 3 credits
+- `DCIT302` Operating Systems — Level 300, 3 credits
 
 **Active semester**
-- Fall 2024 — 1 September 2024 to 15 December 2024
+- First Semister 2025 — 1 January 2025 to 15 April 2025
 
 ## Endpoint Catalog
 
