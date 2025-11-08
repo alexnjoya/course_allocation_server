@@ -56,12 +56,12 @@ Verify with `mvn -version` if installed globally.
 
 Clone or copy the project and move into the root folder:
 
-- **macOS/Linux:** `cd /path/to/course-allocation`
-- **Windows:** `cd C:\path\to\course-allocation`
+- **macOS/Linux:** `cd /path/to/course-allocation-server`
+- **Windows:** `cd C:\path\to\course-allocation-server`
 
 You should see:
 ```
-course-allocation/
+course-allocation-server/
 ├── src/
 │   ├── main/
 │   └── test/
@@ -101,7 +101,7 @@ Update the secret for production deployments.
 
 ### Maven Wrapper (recommended)
 - **macOS/Linux:** `./mvnw spring-boot:run`
-- **Windows:** `mvnw.cmd spring-boot:run`
+- **Windows:** `.\mvnw.cmd spring-boot:run`
 
 ### Local Maven installation
 `mvn spring-boot:run`
@@ -122,8 +122,8 @@ OpenAPI JSON: `http://localhost:8080/v3/api-docs`
 1. **Login** — `POST /api/auth/login`
    ```json
    {
-     "studentId": "STU001",
-     "pin": "1234"
+     "studentId": "10953537",
+     "pin": "12534"
    }
    ```
 2. Copy the `token` field from the response.
@@ -214,7 +214,7 @@ Windows alternative: `mvnw.cmd test`
 Quick manual flow:
 1. Start the app (`./mvnw spring-boot:run`).
 2. Open `http://localhost:8080/docs`.
-3. Log in with `STU001` / `1234`.
+3. Log in with `10953537` / `12534`.
 4. Authorize Swagger with the returned token.
 5. Fetch available courses via `GET /api/student/courses/available?studentId=1&semesterId=1`.
 6. Enroll using `POST /api/student/courses/select?studentId=1` with `{"courseId": 1}`.
@@ -244,19 +244,22 @@ Quick manual flow:
 
 ## Project Layout
 ```
-course-allocation/
+course-allocation-server/
 ├── src/
 │   ├── main/
 │   │   ├── java/com/courseallocation/course_allocation/
 │   │   │   ├── config/
 │   │   │   ├── controller/
-│   │   │   ├── dto/
+│   │   │   ├── SemesterPayload/
 │   │   │   ├── exception/
 │   │   │   ├── model/
 │   │   │   ├── repository/
 │   │   │   └── service/
-│   │   └── resources/application.properties
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── database/create-database.sql
 │   └── test/
+├── mvnw / mvnw.cmd
 ├── pom.xml
 └── README.md
 ```
